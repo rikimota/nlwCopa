@@ -22,27 +22,27 @@ function createCard(date, day, games) {
 }
 
 document.querySelector("#cards").innerHTML =
-  createCard("24/11", "quinta", createGame("brazil", "13:00", "serbia")) +
   createCard(
-    "21/11",
+    "24/11",
+    "quinta",
+    createGame("switzerland", "07:00", "cameroon") +
+      createGame("uruguay", "10:00", "southcorea") +
+      createGame("portugal", "13:00", "ghana") +
+      createGame("brazil", "16:00", "serbia")
+  ) +
+  createCard(
+    "28/11",
     "segunda",
-    createGame("england", "10:00", "iran") +
-      createGame("senegal", "13:00", "netherlands") +
-      createGame("usa", "16:00", "wales")
+    createGame("cameroon", "07:00", "serbia") +
+      createGame("southcorea", "10:00", "ghana") +
+      createGame("brazil", "13:00", "switzerland") +
+      createGame("portugal", "10:00", "uruguay")
   ) +
   createCard(
-    "22/12",
-    "terça",
-    createGame("argentina", "07:00", "saudiarabia") +
-      createGame("denmark", "10:00", "tunisia") +
-      createGame("mexico", "13:00", "poland") +
-      createGame("france", "16:00", "australia")
-  ) +
-  createCard(
-    "23/11",
-    "quarta",
-    createGame("morocco", "07:00", "croatia") +
-      createGame("germany", "10:00", "japan") +
-      createGame("spain", "13:00", "costarica") +
-      createGame("belgium", "13:00", "canada")
+    "02/12",
+    "sexta",
+    createGame("southcorea", "12:00", "portugal") +
+      createGame("ghana", "12:00", "uruguay") +
+      createGame("serbia", "16:00", "switzerland") +
+      createGame("cameroon", "16:00", "brazil")
   )
